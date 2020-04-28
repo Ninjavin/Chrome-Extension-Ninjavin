@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Satisfy");
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background: url("https://source.unsplash.com/random/?night,space");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.main{
+    display: grid;
+    height: 90vh;
+}
+
+.greet_block{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.clock{
+    display: flex;
+    justify-content: center;
+    font-size: 7rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    /* width: 50%;
+    height: 50%; */
+}
+
+.clock p{
+    color: white;
+    font-size: 9rem;
+}
+
+
+.welcome_block{
+    display: none;
+}
+
+.greet_user_block{
+    display: block;
+    color: white;
+    display: none;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+}
+
+.quote_block{
+    margin: 2rem 0;
+    display: none;
+    font-family: 'Amatic SC', cursive;
+}
+
+#quote_block_quote{
+    font-size: 1.8rem;
+    color: #d2deff;
+    font-weight: bold;
+}
+
+#quote_block_author{
+    display: block;
+    font-size: 1.8em;
+    color: #f1d4a9;
+    font-style: bold;
+    margin: 1rem 0;
+    font-family: 'Amatic SC', cursive;
+    float: right;
+}
+
+footer{
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer_link{
+    color: white;
+    padding: 0px 15px 0px 0px;
+    font-size: 1.8rem;
+}
+
+.welcome_block_header{
+    color: white;
+    font-size: 3.5rem;
+    margin: 1rem 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.welcome_block input{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    width: 60%;
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.welcome_block input::placeholder{
+    color: #fff;
+}
+
+.welcome_block input:focus{
+    outline: none; 
+}
+
+.reset_data{
+    font-family: sans-serif;
+    position: absolute;
+    right: 2%;
+    font-size: 1.4rem;
+    background: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    bottom: 33px;
+}
