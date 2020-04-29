@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600");
-@import url("https://fonts.googleapis.com/css?family=Pacifico|Satisfy");
+/* @import url("https://fonts.googleapis.com/css?family=Pacifico|Satisfy"); */
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@500&display=swap');
 
@@ -13,11 +13,12 @@
 body{
     margin: 0;
     /* font-family: Arial, Helvetica, sans-serif; */
-    background: url("https://source.unsplash.com/random/?night,space");
+    background: url("https://source.unsplash.com/random/?night,space,coding,avengers,minimal");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    z-index: -1;
 }
 
 .main{
@@ -29,6 +30,7 @@ body{
     display: grid;
     align-content: center;
     justify-content: center;
+    margin: 0px 100px;
 }
 
 .clock{
@@ -68,16 +70,17 @@ body{
 
 #quote_block_quote{
     font-size: 1.8rem;
-    color: #d2deff;
+    color: #f1f1f1;
     font-weight: bold;
+    font-style: bold;
 }
 
 #quote_block_author{
     display: block;
     font-size: 1.8em;
-    color: #f1d4a9;
+    color: #f1f1f1;
     font-style: bold;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     font-family: 'Amatic SC', cursive;
     float: right;
 }
@@ -140,3 +143,42 @@ footer{
     cursor: pointer;
     bottom: 33px;
 }
+
+.google_search_block{
+    margin-top: 2.5rem;
+    margin-left: 1.8rem;
+}
+
+.google_search_block form input{
+    border: none;
+    border-bottom: 2px solid #fff;
+    opacity: 0.80;
+    text-align: left;
+    background: transparent;
+    font-family: inherit;
+    width: 230px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.google_search_block form input::placeholder{
+    color: white;
+    opacity: 0.80;
+}
+
+.google_search_block form button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.80;
+}
+
+/* .google_search_block form button i{
+    color: white;
+    font-size: 17px;
+    padding-left: 10px;
+    cursor: pointer;
+} */

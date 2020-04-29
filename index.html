@@ -14,8 +14,15 @@
     </head>
     <body>
         <div class="main">
+                <div class="google_search_block">
+                    <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+                        <input autocomplete="on" class="form-control search" name="q" placeholder="Search" required="required" type="text">
+                        <button class="button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
             <!-- Time Block -->
             <div class="greet_block">
+                
                 <div class="date_block">
                     <div class="clock">
                         <p class="hour" id="hour"></p>

@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
 
-    "name": "Ninjavin",
-    "description": "Ninjavin Productivity Extension",
+    "name": "Accomplir",
+    "description": "Accomplir Productivity Extension. Reduces the clutter every time you open a new tab.",
     "version": "1.0",
 
     "chrome_url_overrides" : {
@@ -15,7 +15,6 @@
 
     "browser_action":{
         "default_popup" : "index.html",
-        "default_title": "Ninjavin Tab"
-        
+        "default_title": "Accomplir"   
     }
 }
