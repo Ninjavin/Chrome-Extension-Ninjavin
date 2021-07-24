@@ -1,66 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>New Tab</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>New Tab</title>
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" media="screen" href= "main.css" />
-        
-    </head>
-    <body>
-        <div class="main">
-                <div class="google_search_block">
-                    <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-                        <input autocomplete="on" class="form-control search" name="q" placeholder="Search" required="required" type="text">
-                        <button class="button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </form>
-                </div>
-            <!-- Time Block -->
-            <div class="greet_block">
-                
-                <div class="date_block">
-                    <div class="clock">
-                        <p class="hour" id="hour"></p>
-                        <p class="colon">:</p>
-                        <p class="minute" id="minute"></p>
-                    </div>
-                </div>
-                <div class="welcome_block">
-                    <h1 class="welcome_block_header">Enter the details</h1>
-                    <input type="text" id="user_name" placeholder="Enter your name">
-                    <input type="text" id="github_id" placeholder="GitHub Handle">
-                    <input type="text" id="twitter_id" placeholder="Twitter Handle">
-                    <input type="text" id="linkedin_id" placeholder="LinkedIn Handle">
-                    <input type="text" id="medium_id" placeholder="Medium Handle">
-                </div>
-                <div class="greet_user_block">
-                    <h1><span class="greet_msg"></span>, <span class="greet_user"></span></h1>
-                </div>
-                <div class="quote_block">
-                    <p id="quote_block_quote"></p>
-                    <p id="quote_block_author"></p>
-                </div>
-            </div>
-            
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <div class="main">
+      <div class="google_search_block">
+        <form
+          action="https://www.google.com/search"
+          class="searchform"
+          method="get"
+          name="searchform"
+          target="_blank"
+        >
+          <input
+            autocomplete="on"
+            class="form-control search"
+            name="q"
+            placeholder="Search"
+            required="required"
+            type="text"
+          />
+          <button class="button" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+      <!-- Time Block -->
+      <div class="greet_block">
+        <div class="date_block">
+          <div class="clock">
+            <p class="hour" id="hour"></p>
+            <p class="colon">:</p>
+            <p class="minute" id="minute"></p>
+          </div>
+        </div>
+        <div class="welcome_block">
+          <h1 class="welcome_block_header">Enter your details</h1>
+          <div class="welcome_block_input">
+            <input type="text" id="user_name" placeholder="Enter your name" />
+            <input type="text" id="github_id" placeholder="GitHub Handle" />
+            <input type="text" id="twitter_id" placeholder="Twitter Handle" />
+            <input type="text" id="linkedin_id" placeholder="LinkedIn Handle" />
+            <input type="text" id="medium_id" placeholder="Medium Handle" />
+          </div>
+        </div>
+        <div class="greet_user_block">
+          <h1>
+            <span class="greet_msg"></span>, <span class="greet_user"></span>
+          </h1>
+        </div>
+        <div class="quote_block">
+          <p id="quote_block_quote"></p>
+          <p id="quote_block_author"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer_links_all">
+          <a href="" class="footer_link" id="github_link"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="" class="footer_link" id="twitter_link"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="" class="footer_link" id="linkedin_link"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="" class="footer_link" id="medium_link"
+            ><i class="fab fa-medium-m"></i
+          ></a>
         </div>
 
-        <footer>
-            <div class="footer">
-                <a href="" class="footer_link" id="github_link"><i class="fab fa-github"></i></a>
-                <a href="" class="footer_link" id="twitter_link"><i class="fab fa-twitter"></i></a>
-                <a href="" class="footer_link" id="linkedin_link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="" class="footer_link" id="medium_link"><i class="fab fa-medium-m"></i></a>
+        <button class="reset_data" id="reset-data">Reset</button>
+      </div>
+    </footer>
 
-                <button class="reset_data" id="reset-data">Reset</button>
-            </div>
-            
-        </footer>
-
-        <script src="main.js" type="module" > </script>
-    </body>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>

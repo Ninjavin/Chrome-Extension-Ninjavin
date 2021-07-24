@@ -1,184 +1,187 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* @import url("https://fonts.googleapis.com/css?family=Pacifico|Satisfy"); */
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@500&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    background: url("https://source.unsplash.com/random/?night,dark,coding,wallpapers");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    z-index: -1;
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto";
 }
 
-.main{
-    display: grid;
-    height: 90vh;
+.background-image {
+  background: url("https://source.unsplash.com/random/?night,dark") no-repeat
+    center center;
+  position: fixed;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  filter: blur(2px);
+  z-index: -1;
 }
 
-.greet_block{
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    margin: 0px 100px;
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  justify-content: center;
 }
 
-.clock{
-    display: flex;
-    justify-content: center;
-    font-size: 7rem;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    /* width: 50%;
-    height: 50%; */
+.greet_block {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.clock p{
-    color: white;
-    font-size: 9rem;
+.clock {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
-
-.welcome_block{
-    display: none;
+.clock p {
+  color: white;
+  font-size: 5rem;
 }
 
-.greet_user_block{
-    display: block;
-    color: white;
-    display: none;
-    font-size: 3rem;
-    text-align: center;
-    font-family: "Dosis", sans-serif;
+.welcome_block {
+  display: none;
 }
 
-.quote_block{
-    margin: 2rem 0;
-    display: none;
-    font-family: 'Amatic SC', cursive;
+.greet_user_block {
+  display: block;
+  color: white;
+  display: none;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-#quote_block_quote{
-    font-size: 1.8rem;
-    color: #f1f1f1;
-    font-weight: bold;
-    font-style: bold;
+.quote_block {
+  display: none;
+  font-family: "Amatic SC", cursive;
 }
 
-#quote_block_author{
-    display: block;
-    font-size: 1.8em;
-    color: #f1f1f1;
-    font-style: bold;
-    margin: 0.5rem 0;
-    font-family: 'Amatic SC', cursive;
-    float: right;
+#quote_block_quote {
+  font-size: 2.8rem;
+  color: #f1f1f1;
+  font-weight: bold;
 }
 
-footer{
-    height: 10vh;
-    position: fixed;
-    width: 100%;
+#quote_block_author {
+  display: block;
+  font-size: 2em;
+  color: #f1f1f1;
+  margin: 0.5rem 0;
+  font-family: "Amatic SC", cursive;
+  float: right;
 }
 
-.footer{
-    text-align: center;
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
 }
 
-.footer_link{
-    color: white;
-    padding: 0px 15px 0px 0px;
-    font-size: 1.8rem;
+.footer {
+  display: flex;
+  align-items: center;
 }
 
-.welcome_block_header{
-    color: white;
-    font-size: 3.5rem;
-    margin: 1rem 0;
-    font-family: "Montserrat", sans-serif;
+.footer_links_all {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
 }
 
-.welcome_block input{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 1.5rem;
-    line-height: 1.5rem;
-    width: 60%;
-    background: transparent;
-    color: #fff;
-    border: none;
-    font-size: 1.5rem;
-    border-bottom: 2px solid #fff;
-    text-align: center;
-    font-family: sans-serif;
+.footer_link {
+  color: white;
+  padding: 0px 15px 0px 0px;
+  font-size: 1.8rem;
 }
 
-.welcome_block input::placeholder{
-    color: #fff;
+.welcome_block_header {
+  color: white;
+  font-size: 3.5rem;
+  margin: 1rem 0;
 }
 
-.welcome_block input:focus{
-    outline: none; 
+.welcome_block_input {
+  margin: 0 auto;
 }
 
-.reset_data{
-    font-family: sans-serif;
-    position: absolute;
-    right: 2%;
-    font-size: 1.4rem;
-    background: transparent;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    bottom: 33px;
+.welcome_block input {
+  margin: 1rem;
+  line-height: 1.5rem;
+  width: 30%;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #fff;
+  text-align: center;
 }
 
-.google_search_block{
-    margin-top: 2.5rem;
-    margin-left: 1.8rem;
+.welcome_block input::placeholder {
+  color: #fff;
 }
 
-.google_search_block form input{
-    border: none;
-    border-bottom: 2px solid #fff;
-    opacity: 0.80;
-    text-align: left;
-    background: transparent;
-    font-family: inherit;
-    width: 230px;
-    font-size: 1.2rem;
-    color: white;
+.welcome_block input:focus {
+  outline: none;
 }
 
-.google_search_block form input::placeholder{
-    color: white;
-    opacity: 0.80;
+.reset_data {
+  font-family: sans-serif;
+  position: absolute;
+  right: 20px;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  background: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  bottom: 10px;
 }
 
-.google_search_block form button{
-    background-color: transparent;
-    border: none;
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
-    cursor: pointer;
-    opacity: 0.80;
+.google_search_block {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
 }
 
-/* .google_search_block form button i{
-    color: white;
-    font-size: 17px;
-    padding-left: 10px;
-    cursor: pointer;
-} */
+.google_search_block form input {
+  border: none;
+  border-bottom: 2px solid #fff;
+  opacity: 0.8;
+  text-align: left;
+  background: transparent;
+  width: 200px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.google_search_block form input::placeholder {
+  color: white;
+}
+
+.google_search_block form button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.8;
+}
